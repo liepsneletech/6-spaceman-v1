@@ -5,7 +5,9 @@ footer,
 main {
   width: 800px;
   margin-left: calc((100% - 800px) / 2);
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 ul,
@@ -26,10 +28,12 @@ header > nav,
 header li,
 main > div,
 main img,
+main a,
 footer,
 footer li,
 footer > ul,
-div > span {
+div > span,
+div a {
   display: inline-block;
 }
 
@@ -43,19 +47,33 @@ footer > div {
   float: right;
 }
 
+nav li a:link,
+nav li a:visited {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  text-decoration: underline 1px #554485;
+}
+
 main > div {
-  width: 39.4%;
+  width: 38%;
   color: #202020;
-  background-color: pink;
+  margin-right: 12px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 main img {
-  width: 60%;
+  width: 400px;
+  display: table-cell;
 }
 
 nav {
   width: 100%;
-  vertical-align: middle;
 }
 
 header {
@@ -65,26 +83,54 @@ header {
 
 main {
   margin-bottom: 45px;
-  background-color: orange;
   display: table;
 }
 
 div > span {
-  font-size: 38px;
-  margin-bottom: 21px;
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 300;
 }
 
 div > h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
+  font-weight: 800;
+  font-size: 43px;
   margin-bottom: 55px;
 }
 
 div > p {
   margin-bottom: 50px;
+  font-size: 13px;
 }
 
-div a {
-  font-size: 18px;
+main a {
+  font-size: 13px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+main a:nth-of-type(1):link,
+main a:nth-of-type(1):visited {
+  background: #554485;
+  color: #fff;
+  margin-right: 15px;
+}
+
+main a:nth-of-type(1):hover,
+main a:nth-of-type(1):active {
+  background: #47396e;
+}
+
+main a:nth-of-type(2):link,
+main a:nth-of-type(2):visited {
+  box-shadow: 0 0 0 1.2px #554485 inset;
+  color: #554485;
+  font-weight: 600;
+}
+
+main a:nth-of-type(2):hover,
+main a:nth-of-type(2):active {
+  background-color: #e5def8;
 }
