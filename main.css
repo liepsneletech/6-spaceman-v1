@@ -24,7 +24,6 @@ a {
   text-decoration: none;
 }
 
-header > nav,
 header li,
 main > div,
 main img,
@@ -37,14 +36,18 @@ div a {
   display: inline-block;
 }
 
-nav > img,
+nav img,
 footer > ul {
   float: left;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-nav > ul,
-footer > div {
+header nav > ul,
+footer > p {
   float: right;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 nav li a:link,
@@ -52,6 +55,7 @@ nav li a:visited {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  color: #554485;
 }
 
 nav ul li a:hover,
@@ -67,18 +71,15 @@ main > div {
   vertical-align: middle;
 }
 
-main img {
-  width: 400px;
-  display: table-cell;
-}
-
 nav {
   width: 100%;
+  display: table;
+  height: 40px;
 }
 
 header {
   margin-top: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 main {
@@ -96,6 +97,18 @@ div > h1 {
   font-weight: 800;
   font-size: 43px;
   margin-bottom: 55px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 3px;
+  width: 97px;
+  background-color: #554485;
+  bottom: -16px;
+  left: 0;
 }
 
 div > p {
@@ -133,4 +146,20 @@ main a:nth-of-type(2):visited {
 main a:nth-of-type(2):hover,
 main a:nth-of-type(2):active {
   background-color: #e5def8;
+}
+
+footer p {
+  font-size: 11px;
+}
+
+footer a {
+  color: #cbcccc;
+}
+
+footer li {
+  margin-right: 12px;
+}
+
+nav li {
+  margin-left: 12px;
 }
