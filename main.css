@@ -9,7 +9,6 @@ footer,
 main {
   width: 800px;
   margin-left: calc((100% - 800px) / 2);
-  margin-right: calc((100% - 800px) / 2);
   font-family: Montserrat, sans-serif;
   padding-left: 20px;
   padding-right: 20px;
@@ -207,7 +206,6 @@ nav li {
     position: fixed;
     z-index: 1;
     background-color: rgb(235, 235, 238);
-    overflow-x: hidden;
   }
 
   .header.show ul {
@@ -228,6 +226,27 @@ nav li {
 
   .header.show img {
     display: none;
+  }
+
+  main > div {
+    float: none;
+    margin-bottom: 60px;
+    margin-left: calc((100% - 420px) / 2);
+    width: 60%;
+  }
+
+  video {
+    margin-left: calc((100% - 420px) / 2);
+    max-width: 380px;
+  }
+
+  header,
+  footer,
+  main {
+    max-width: 760px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
   }
 }
 
