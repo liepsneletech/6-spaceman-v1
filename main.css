@@ -207,6 +207,7 @@ nav li {
     position: fixed;
     z-index: 1;
     background-color: rgb(235, 235, 238);
+    overflow-x: hidden;
   }
 
   .header.show ul {
