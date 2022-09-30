@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 header,
 footer,
 main {
@@ -12,7 +16,6 @@ main {
   font-family: Montserrat, sans-serif;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box;
 }
 
 ul,
@@ -231,12 +234,13 @@ nav li {
   main > div {
     float: none;
     margin-bottom: 60px;
-    margin-left: calc((100% - 420px) / 2);
+    margin-left: 0;
     width: 60%;
   }
 
   video {
-    margin-left: calc((100% - 420px) / 2);
+    margin-left: 0;
+    margin-bottom: 40px;
     max-width: 380px;
   }
 
