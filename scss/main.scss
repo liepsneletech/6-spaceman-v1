@@ -277,6 +277,7 @@ nav li {
 @media all and (max-width: 450px) {
   video {
     width: 300px;
+    margin-left: calc((100% - 300px) / 2);
   }
 
   header {
