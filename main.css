@@ -53,6 +53,10 @@ footer > p {
   float: right;
 }
 
+header > ul {
+  z-index: 3;
+}
+
 nav li a:link,
 nav li a:visited {
   font-size: 14px;
@@ -186,7 +190,7 @@ nav li {
 
 @media all and (max-width: 800px) {
   .mobile-btn-x,
-  .header-nav {
+  .header ul {
     display: none;
   }
   .show {
@@ -197,8 +201,32 @@ nav li {
     display: none;
   }
 
-  .header-nav.show {
+  .header.show {
     height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(235, 235, 238);
+  }
+
+  .header.show ul {
+    display: block;
+    float: initial;
+    margin-top: 140px;
+    line-height: 2.5;
+  }
+
+  .header.show li {
+    display: block;
+    text-align: center;
+  }
+
+  .header.show li a {
+    font-size: 20px;
+  }
+
+  .header.show img {
+    display: none;
   }
 }
 
