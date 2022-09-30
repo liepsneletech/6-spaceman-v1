@@ -235,7 +235,7 @@ nav li {
     float: none;
     margin-bottom: 60px;
     margin-left: 0;
-    width: 60%;
+    width: 100%;
   }
 
   video {
@@ -247,7 +247,7 @@ nav li {
   header,
   footer,
   main {
-    max-width: 760px;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
