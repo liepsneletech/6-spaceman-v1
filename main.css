@@ -18,6 +18,11 @@ main {
   padding-right: 20px;
 }
 
+main {
+  width: 950px;
+  margin-left: calc((100% - 900px) / 2);
+}
+
 footer {
   margin-bottom: 40px !important;
   margin-bottom: 20px;
@@ -82,6 +87,7 @@ main > div {
   color: #202020;
   margin-right: 12px;
   margin-top: 36px;
+  margin-left: 50px;
 }
 
 nav {
@@ -96,6 +102,7 @@ header {
 
 .mobile-menu-btns {
   float: right !important;
+  cursor: pointer;
 }
 
 header ul {
@@ -226,6 +233,7 @@ nav li {
   .header.show li {
     display: block;
     text-align: center;
+    margin: 0;
   }
 
   .header.show li a {
