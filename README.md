@@ -10,7 +10,7 @@ _40 group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/40-grupe-astronautas/
+Site published at: https://liepsneletech.github.io/7-spaceman/
 
 Design: https://dribbble.com/shots/5964475/attachments/5964475-404-Lost-in-Space
 
@@ -26,4 +26,4 @@ Design: https://dribbble.com/shots/5964475/attachments/5964475-404-Lost-in-Space
 
 ## Authors
 
-Monika: [Github](https://github.com/belauzas)
+Monika: [Github](https://github.com/liepsneletech)
